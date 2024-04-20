@@ -1,3 +1,4 @@
+// calculate the area of rectangle
 #include <iostream>
 using namespace std;
 
@@ -21,13 +22,12 @@ int area(int l, int b)
 
 int main()
 {
-    // calculate the area of rectangle
     int l = 10;
     int b = 20;
-    int sum;
-    sum = area(l, b); // pass by value
+    int result;
+    result = area(l, b); // pass by value
     // sum = area(&l, &b); //pass by address
     // sum = area(l, b); //pass by reference
-    cout << sum;
+    cout << result;
     cout << l;
 }
