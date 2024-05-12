@@ -16,7 +16,7 @@ int main()
     // {
     //     cout << arr[i]<<endl;
     // }
-    
+
     int index = 1;
     int value = 18;
     int size = 4;
@@ -26,9 +26,10 @@ int main()
         arr[i] = arr[i - 1];
     }
     arr[index] = value;
+    length++;
 
     for (int i = 0; i < length; i++)
     {
-        cout << arr[i]<<" "; // expected output after shifting
+        cout << arr[i] << " "; // expected output after shifting
     }
 }
