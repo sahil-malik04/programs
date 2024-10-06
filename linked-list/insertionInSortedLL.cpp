@@ -45,17 +45,24 @@ void insertionInSorted(struct Node *p, int x)
     t->data = x;
     t->next = NULL;
 
-    if(first == NULL){
+    if (first == NULL)
+    {
         first = t;
-    }else{
-        while (p && p->data < x){
+    }
+    else
+    {
+        while (p && p->data < x)
+        {
             q = p;
             p = p->next;
         }
-        if(p == first){
+        if (p == first)
+        {
             t->next == first;
             first = t;
-        }else{
+        }
+        else
+        {
             t->next = q->next;
             q->next = t;
         }
