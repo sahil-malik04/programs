@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int reverse(int digit)
+int reverse(int number)
 {
     int reverseNumber = 0;
-    while (digit > 0)
+    while (number > 0)
     {
-        int lastDigit = digit % 10;
-        digit = digit / 10;
+        int lastDigit = number % 10;
+        number = number / 10;
         reverseNumber = (reverseNumber * 10) + lastDigit;
     }
     return reverseNumber;
@@ -15,6 +15,6 @@ int reverse(int digit)
 
 int main()
 {
-    int digit = 77895;
-    cout << "The reverse result is: " << reverse(digit);
+    int number = 77895;
+    cout << "The reverse result is: " << reverse(number);
 }

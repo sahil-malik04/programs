@@ -1,23 +1,23 @@
 #include <iostream>
 using namespace std;
 
-bool checkPallindrome(int number)
+bool checkArmStrong(int number)
 {
     int numberCopy = number;
-    int reverseNumber = 0;
+    int sum = 0;
     while (number > 0)
     {
         int lastDigit = number % 10;
+        sum += (lastDigit * lastDigit * lastDigit);
         number = number / 10;
-        reverseNumber = (reverseNumber * 10) + lastDigit;
     }
-    if (numberCopy == reverseNumber)
+    if (numberCopy == sum)
         return true;
     return false;
 }
 
 int main()
 {
-    int number = 12321;
-    cout << checkPallindrome(number);
+    int number = 35;
+    cout << checkArmStrong(number);
 }

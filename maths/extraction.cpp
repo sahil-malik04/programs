@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
-void extraction(int digit)
+void extraction(int number)
 {
-    while (digit > 0)
+    while (number > 0)
     {
-        int lastDigit = digit % 10;
+        int lastDigit = number % 10;
         cout << lastDigit << " ";
-        digit = digit / 10;
+        number = number / 10;
     }
 }
 
 int main()
 {
-    int digit = 7789;
-    extraction(digit);
+    int number = 7789;
+    extraction(number);
 }
