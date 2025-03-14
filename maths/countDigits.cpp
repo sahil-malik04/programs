@@ -6,7 +6,6 @@ int countDigits(int digit)
     int count = 0;
     while (digit > 0)
     {
-        int lastDigit = digit % 10;
         count++;
         digit = digit / 10;
     }
@@ -16,5 +15,5 @@ int countDigits(int digit)
 int main()
 {
     int digit = 749000;
-    cout << countDigits(digit);
+    cout << "Total Digits are: " << countDigits(digit);
 }
